@@ -32,6 +32,7 @@ func findLastDigit(line string) (int, error) {
 		}
 	}*/
 	for i := len(line) - 1; i >= 0; i-- {
+		fmt.Println(line[i:len(line)])
 		if line[i] >= '0' && line[i] <= '9' {
 			return int(line[i] - '0'), nil
 		}
